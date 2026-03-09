@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>事業承継コンサルティング | 想いをつなぎ、未来を創る</title>
+  <meta name="description" content="事業承継を通じて、経営者の想いを次世代へ。公認会計士・税理士・弁護士のワンストップチームが丁寧に伴走支援します。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="material-symbols-outlined">account_balance</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon material-symbols-outlined">account_balance</span>
+        <span class="logo-text">事業承継コンサルティング</span>
+      </a>
+      <nav id="nav">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">サービス</a></li>
+          <li><a href="#why-us" class="nav-link">選ばれる理由</a></li>
+          <li><a href="#cases" class="nav-link">支援事例</a></li>
+          <li><a href="#team" class="nav-link">専門家チーム</a></li>
+          <li><a href="#steps" class="nav-link">支援の流れ</a></li>
+          <li><a href="blog.html" class="nav-link">ブログ</a></li>
+          <li><a href="#contact" class="nav-cta">無料相談</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" class="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div id="mobile-nav" class="mobile-nav">
+    <button id="mobile-close" class="mobile-close" aria-label="閉じる">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <ul>
+      <li><a href="#services">サービス</a></li>
+      <li><a href="#why-us">選ばれる理由</a></li>
+      <li><a href="#cases">支援事例</a></li>
+      <li><a href="#team">専門家チーム</a></li>
+      <li><a href="#steps">支援の流れ</a></li>
+      <li><a href="blog.html">ブログ</a></li>
+      <li><a href="#contact" class="mobile-cta">無料相談</a></li>
+    </ul>
+  </div>
+  <div id="overlay" class="overlay"></div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80" alt="" aria-hidden="true" class="hero-bg-img" />
+        <div class="hero-bg-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text fade-in">
+          <span class="badge">次世代への架け橋</span>
+          <h1 class="hero-title">想いをつなぎ、<br />未来を創る。</h1>
+          <p class="hero-sub">事業承継を通じて、経営者の想いを次世代へ。<br />公認会計士・税理士・弁護士のワンストップチームが<br />あなたの企業の未来を共に創ります。</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>無料で相談する</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="#services" class="btn btn-outline-white btn-lg">サービスを見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span class="scroll-text">SCROLL</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item" data-count="500" data-suffix="+">
+          <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">支援実績</span>
+        </div>
+        <div class="stat-item" data-count="98" data-suffix="%">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">顧客満足度</span>
+        </div>
+        <div class="stat-item" data-count="20" data-suffix="年">
+          <span class="stat-num" data-target="20">0</span><span class="stat-suffix">年</span>
+          <span class="stat-label">業界経験</span>
+        </div>
+        <div class="stat-item" data-count="30" data-suffix="名">
+          <span class="stat-num" data-target="30">0</span><span class="stat-suffix">名</span>
+          <span class="stat-label">専門家在籍</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAIN POINTS ===== -->
+    <section class="pain section-pad bg-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">こんなお悩みはありませんか？</span>
+          <h2 class="section-title">多くの経営者が抱える<br />事業承継の課題</h2>
+        </div>
+        <div class="pain-grid">
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">person_off</span>
+            </div>
+            <h3>後継者がいない</h3>
+            <p>親族や従業員に適切な候補者がおらず、将来が不安。リタイアを考えているが廃業は避けたい。</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h3>M&Aを検討したい</h3>
+            <p>第三者への承継を含め、最適な出口戦略を模索。自社の価値を適正に評価し良いパートナーを見つけたい。</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">calculate</span>
+            </div>
+            <h3>税制面の不安</h3>
+            <p>相続税・贈与税などのコストを最小限に抑えたい。最新の税制優遇措置をフル活用して円滑に承継したい。</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">schedule</span>
+            </div>
+            <h3>準備が進まない</h3>
+            <p>事業承継の必要性は感じているが、どこから手をつければよいかわからず、先延ばしになってしまっている。</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">diversity_3</span>
+            </div>
+            <h3>親族間のトラブル</h3>
+            <p>株式・財産の分配をめぐり、親族間で意見が対立。感情的な問題を含む複雑な状況を整理したい。</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <span class="material-symbols-outlined">corporate_fare</span>
+            </div>
+            <h3>企業価値の向上</h3>
+            <p>承継前に自社の企業価値を高めたい。財務体質の改善や組織体制の整備を専門家と進めたい。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">サービス紹介</span>
+          <h2 class="section-title">あなたの状況に合わせた<br />最適な承継プランを提供</h2>
+          <p class="section-desc">事業承継には多様なかたちがあります。当社はすべての承継スタイルに対応しています。</p>
+        </div>
+        <div class="services-tabs reveal">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="family">親族内承継</button>
+            <button class="tab-btn" data-tab="employee">親族外承継</button>
+            <button class="tab-btn" data-tab="ma">M&A仲介</button>
+            <button class="tab-btn" data-tab="tax">相続・贈与対策</button>
+          </div>
+          <div class="tabs-body">
+            <div class="tab-panel active" id="tab-family">
+              <div class="tab-content">
+                <div class="tab-text">
+                  <h3>親族内承継支援</h3>
+                  <p>子や孫など親族へ事業を引き継ぐ最もオーソドックスな方法です。株式の移転スキーム設計から後継者教育プログラムまで、長期的な視点でサポートします。</p>
+                  <ul class="service-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>後継者選定・育成プログラム</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>自社株評価・移転スキーム設計</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>事業承継税制（特例措置）の活用</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>経営権の円滑な移行サポート</li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary">詳しく相談する</a>
+                </div>
+                <div class="tab-image">
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&auto=format&fit=crop&q=80" alt="親族内承継" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-panel" id="tab-employee">
+              <div class="tab-content">
+                <div class="tab-text">
+                  <h3>親族外承継支援（MBO/EBO）</h3>
+                  <p>役員や従業員への承継（MBO・EBO）は、社内文化の継承と経営安定に優れた方法です。資金調達計画から株式取得スキームまで包括的に支援します。</p>
+                  <ul class="service-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>候補者の選定・評価サポート</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>資金調達・金融機関との交渉</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>株式取得スキームの設計</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>経営移行後のフォローアップ</li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary">詳しく相談する</a>
+                </div>
+                <div class="tab-image">
+                  <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=80" alt="親族外承継" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-panel" id="tab-ma">
+              <div class="tab-content">
+                <div class="tab-text">
+                  <h3>M&A仲介・アドバイザリー</h3>
+                  <p>第三者への売却・買収による承継です。独自のマッチングネットワークと徹底したバリュエーションにより、最適な相手企業とのマッチングを実現します。</p>
+                  <ul class="service-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>企業価値評価（DCF・類似会社比較）</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>買収候補先の選定・アプローチ</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>デューデリジェンス支援</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>契約交渉・クロージングサポート</li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary">詳しく相談する</a>
+                </div>
+                <div class="tab-image">
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&auto=format&fit=crop&q=80" alt="M&A" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-panel" id="tab-tax">
+              <div class="tab-content">
+                <div class="tab-text">
+                  <h3>相続・贈与対策</h3>
+                  <p>事業承継における税負担の最小化は重要な課題です。事業承継税制の特例措置や持株会の設立など、最新の税制を駆使して最適な対策を立案します。</p>
+                  <ul class="service-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>事業承継税制（特例・一般）の活用</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>持株会・資産管理会社の設立</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>生命保険を活用した納税資金対策</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>遺言・信託の活用による争族対策</li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary">詳しく相談する</a>
+                </div>
+                <div class="tab-image">
+                  <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop&q=80" alt="相続・贈与対策" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section id="why-us" class="why-us section-pad bg-primary-dark">
+      <div class="container">
+        <div class="section-head reveal" style="color:#fff">
+          <span class="section-label" style="color:rgba(255,255,255,0.7)">私たちが選ばれる理由</span>
+          <h2 class="section-title" style="color:#fff">専門性と実績で<br />選ばれ続けています</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-num">01</div>
+            <div class="why-icon"><span class="material-symbols-outlined">trending_up</span></div>
+            <h3>豊富な実績</h3>
+            <p>設立以来500件超の事業承継を支援。製造業・小売業・サービス業など多様な業種・規模に対応。成功ノウハウが蓄積されています。</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-num">02</div>
+            <div class="why-icon"><span class="material-symbols-outlined">groups</span></div>
+            <h3>専門家ワンストップ</h3>
+            <p>公認会計士・税理士・弁護士・中小企業診断士が1チームとして動きます。複数の専門家への依頼・調整が不要で、スムーズに進みます。</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-num">03</div>
+            <div class="why-icon"><span class="material-symbols-outlined">support_agent</span></div>
+            <h3>丁寧な伴走支援</h3>
+            <p>プランニングに留まらず実行まで伴走。月次報告・定期面談で進捗を共有し、問題が生じた際も迅速に対応します。</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-num">04</div>
+            <div class="why-icon"><span class="material-symbols-outlined">security</span></div>
+            <h3>守秘義務の徹底</h3>
+            <p>事業承継の情報は極めて機密性が高い情報です。当社では情報管理規程を厳格に運用し、情報漏洩ゼロを継続しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASES ===== -->
+    <section id="cases" class="cases section-pad bg-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">支援事例</span>
+          <h2 class="section-title">承継を成功させた<br />経営者の声</h2>
+        </div>
+        <div class="cases-slider">
+          <div class="cases-track" id="casesTrack">
+
+            <div class="case-card">
+              <div class="case-header">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&auto=format&fit=crop&q=80" alt="経営者A" class="case-avatar" />
+                <div>
+                  <p class="case-name">山田 正義 様</p>
+                  <p class="case-meta">製造業 / 従業員85名 / 親族内承継</p>
+                </div>
+              </div>
+              <p class="case-quote">「息子への承継を考えていたが、株価が高く税負担が心配でした。事業承継税制の特例活用と株価対策を組み合わせたプランにより、想定より大幅に節税できました。」</p>
+              <div class="case-tag"><span class="material-symbols-outlined">savings</span>相続税 約6,000万円節税</div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <img src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=80&h=80&auto=format&fit=crop&q=80" alt="経営者B" class="case-avatar" />
+                <div>
+                  <p class="case-name">鈴木 幸子 様</p>
+                  <p class="case-meta">小売業 / 従業員32名 / M&A</p>
+                </div>
+              </div>
+              <p class="case-quote">「後継者がなく廃業を考えていましたが、相談して良かったです。企業価値を正確に評価してもらい、想定より高い価格で引き継いでもらえました。従業員も継続雇用されています。」</p>
+              <div class="case-tag"><span class="material-symbols-outlined">trending_up</span>想定比120%の売却価格を実現</div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&auto=format&fit=crop&q=80" alt="経営者C" class="case-avatar" />
+                <div>
+                  <p class="case-name">佐藤 健一 様</p>
+                  <p class="case-meta">飲食業 / 従業員120名 / EBO</p>
+                </div>
+              </div>
+              <p class="case-quote">「長年共に働いてきた専務に引き継いでほしかった。資金調達から株式取得スキームまで全て設計してもらい、スムーズに譲渡できました。会社の文化も引き継がれています。」</p>
+              <div class="case-tag"><span class="material-symbols-outlined">handshake</span>社内文化を守った円滑な承継</div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&auto=format&fit=crop&q=80" alt="経営者D" class="case-avatar" />
+                <div>
+                  <p class="case-name">田中 美鈴 様</p>
+                  <p class="case-meta">IT業 / 従業員55名 / M&A</p>
+                </div>
+              </div>
+              <p class="case-quote">「事業拡大のため大手企業へのM&Aを検討しました。複数社への打診からデューデリジェンスまでプロに任せることで、本業に集中しながら最高の条件で取引できました。」</p>
+              <div class="case-tag"><span class="material-symbols-outlined">rocket_launch</span>シナジーを活かした成長M&A</div>
+            </div>
+
+          </div>
+          <div class="slider-controls">
+            <button id="prevBtn" class="slider-btn" aria-label="前へ">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button id="nextBtn" class="slider-btn" aria-label="次へ">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section id="team" class="team section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">専門家チーム</span>
+          <h2 class="section-title">多様な専門知識を持つ<br />プロフェッショナルチーム</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&auto=format&fit=crop&q=80" alt="代表 田村健二" />
+            </div>
+            <h3 class="team-name">田村 健二</h3>
+            <p class="team-role">代表取締役 / 公認会計士</p>
+            <p class="team-bio">大手監査法人を経て独立。20年以上にわたり事業承継・M&A分野に特化。500件超の支援実績を持つ業界のパイオニア。</p>
+            <div class="team-tags">
+              <span>公認会計士</span><span>M&A</span><span>事業承継</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&auto=format&fit=crop&q=80" alt="税務部門長 中川恵子" />
+            </div>
+            <h3 class="team-name">中川 恵子</h3>
+            <p class="team-role">税務部門長 / 税理士</p>
+            <p class="team-bio">相続・事業承継税制の専門家として300件超の税務支援実績。事業承継税制の特例措置活用において業界随一のノウハウを有する。</p>
+            <div class="team-tags">
+              <span>税理士</span><span>相続税</span><span>贈与税</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&auto=format&fit=crop&q=80" alt="法務部門長 松本大輔" />
+            </div>
+            <h3 class="team-name">松本 大輔</h3>
+            <p class="team-role">法務部門長 / 弁護士</p>
+            <p class="team-bio">企業法務・M&Aの専門弁護士として15年の経験。複雑な株主間契約や事業譲渡契約のドラフティングに豊富な実績を持つ。</p>
+            <div class="team-tags">
+              <span>弁護士</span><span>M&A</span><span>企業法務</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&auto=format&fit=crop&q=80" alt="経営支援部門長 佐々木理恵" />
+            </div>
+            <h3 class="team-name">佐々木 理恵</h3>
+            <p class="team-role">経営支援部門長 / 中小企業診断士</p>
+            <p class="team-bio">中小企業の経営改善・事業再構築の専門家。承継前の企業価値向上から承継後の新体制構築まで経営面から一貫してサポートする。</p>
+            <div class="team-tags">
+              <span>中小企業診断士</span><span>経営改善</span><span>事業再構築</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STEPS ===== -->
+    <section id="steps" class="steps section-pad bg-primary-dark">
+      <div class="container">
+        <div class="section-head reveal" style="color:#fff">
+          <span class="section-label" style="color:rgba(255,255,255,0.7)">支援の流れ</span>
+          <h2 class="section-title" style="color:#fff">丁寧なステップで<br />確実な承継を実現</h2>
+        </div>
+        <div class="steps-timeline">
+          <div class="steps-line"></div>
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <div class="step-icon"><span class="material-symbols-outlined">record_voice_over</span></div>
+              <h3>ヒアリング・初回相談</h3>
+              <p>経営者の想い、現状の課題、将来のビジョンをじっくりと伺います。初回相談は無料で、秘密厳守で対応します。</p>
+              <span class="step-duration">所要期間：1〜2週間</span>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <div class="step-icon"><span class="material-symbols-outlined">search</span></div>
+              <h3>現状分析・企業診断</h3>
+              <p>財務・税務・法務の各専門家が連携し、企業の現状を多角的に分析。自社株評価や潜在リスクの洗い出しを行います。</p>
+              <span class="step-duration">所要期間：2〜4週間</span>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <div class="step-icon"><span class="material-symbols-outlined">edit_document</span></div>
+              <h3>承継プラン策定</h3>
+              <p>分析結果に基づき、最適なスキームとロードマップをご提案。複数のプランを比較検討し、最善の承継方法を決定します。</p>
+              <span class="step-duration">所要期間：2〜4週間</span>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <div class="step-icon"><span class="material-symbols-outlined">rocket_launch</span></div>
+              <h3>実行支援・伴走</h3>
+              <p>承継プランの実行フェーズを強力にサポート。後継者探しやM&A交渉、各種手続きの実務を担当者が責任を持って対応します。</p>
+              <span class="step-duration">所要期間：6ヶ月〜3年</span>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">05</div>
+            <div class="step-body">
+              <div class="step-icon"><span class="material-symbols-outlined">verified</span></div>
+              <h3>承継完了・アフターフォロー</h3>
+              <p>契約締結・登記変更など最終手続きを完了。新体制の安定稼働まで定期的にフォローし、承継後の経営課題も継続サポートします。</p>
+              <span class="step-duration">承継完了後も継続支援</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG PREVIEW ===== -->
+    <section id="blog" class="blog-preview section-pad bg-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">実践コラム</span>
+          <h2 class="section-title">プロが教える<br />事業承継 完全解説ブログ</h2>
+          <p class="section-desc">新事業承継税制から生命保険・信託・M&Aまで、全30回の連載で経営者に必要な知識を届けます。</p>
+        </div>
+        <div class="blog-preview-series reveal">
+          <div class="blog-preview-card blog-preview-card-1">
+            <div class="bp-header">
+              <span class="bp-badge">前編</span>
+              <h3>新事業承継税制（特例措置）を<br />活用した承継</h3>
+              <p>第1回〜第10回</p>
+            </div>
+            <ul class="bp-list">
+              <li><span class="material-symbols-outlined">article</span>第1回：100%猶予の衝撃、新事業承継税制とは</li>
+              <li><span class="material-symbols-outlined">article</span>第2回：一般措置との決定的な違い</li>
+              <li><span class="material-symbols-outlined">article</span>第3回：特例承継計画の提出期限に注意</li>
+              <li><span class="material-symbols-outlined">article</span>第4回：認定経営革新等支援機関の役割</li>
+              <li class="bp-more">…全10回収録</li>
+            </ul>
+            <a href="blog.html#series1-section" class="btn btn-primary">前編を読む <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+          <div class="blog-preview-card blog-preview-card-2">
+            <div class="bp-header">
+              <span class="bp-badge bp-badge-2">後編</span>
+              <h3>新事業承継税制を<br />使わない事業承継</h3>
+              <p>第11回〜第30回</p>
+            </div>
+            <ul class="bp-list">
+              <li><span class="material-symbols-outlined">article</span>第14回：生命保険の活用①納税資金の確保</li>
+              <li><span class="material-symbols-outlined">article</span>第17回：役員退職金によるダブル効果</li>
+              <li><span class="material-symbols-outlined">article</span>第25回：家族信託と認知症リスクへの備え</li>
+              <li><span class="material-symbols-outlined">article</span>第27回：第三者承継（M&A）という前向きな選択</li>
+              <li class="bp-more">…全20回収録</li>
+            </ul>
+            <a href="blog.html#series2-section" class="btn btn-outline-dark">後編を読む <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="blog-preview-cta reveal">
+          <a href="blog.html" class="btn btn-primary btn-lg">
+            <span class="material-symbols-outlined">library_books</span>
+            全30回のブログを読む
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section-pad">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-left">
+            <span class="section-label">お問い合わせ</span>
+            <h2>まずは<br />お気軽にご相談ください</h2>
+            <p>事業承継は時間のかかるプロセスです。早めの準備が、企業の価値を守り、さらなる発展へと繋がります。初回相談は完全無料・秘密厳守です。</p>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined">phone_in_talk</span>
+                <div>
+                  <small>電話でのご相談</small>
+                  <strong>0120-XXX-XXX</strong>
+                  <small>平日 9:00〜18:00</small>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined">mail</span>
+                <div>
+                  <small>メールでのご相談</small>
+                  <strong>info@jigyoshoukei.co.jp</strong>
+                  <small>24時間受付</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">お名前 <span class="required">必須</span></label>
+                  <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">会社名 <span class="required">必須</span></label>
+                  <input type="text" id="company" name="company" placeholder="株式会社〇〇" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">メールアドレス <span class="required">必須</span></label>
+                  <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="tel">電話番号</label>
+                  <input type="tel" id="tel" name="tel" placeholder="03-XXXX-XXXX" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="type">ご相談の種別 <span class="required">必須</span></label>
+                <select id="type" name="type" required>
+                  <option value="">選択してください</option>
+                  <option>親族内承継について</option>
+                  <option>親族外承継（MBO/EBO）について</option>
+                  <option>M&A（第三者承継）について</option>
+                  <option>相続・贈与対策について</option>
+                  <option>その他</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">ご相談内容</label>
+                <textarea id="message" name="message" rows="4" placeholder="ご相談内容をご入力ください"></textarea>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">プライバシーポリシーに同意する</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>無料で相談する</span>
+                <span class="material-symbols-outlined">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon material-symbols-outlined">account_balance</span>
+            <span class="logo-text">事業承継コンサルティング</span>
+          </div>
+          <p>想いを次世代へつなぐ。<br />経営者の皆様に寄り添い、企業の永続的な発展を支援します。</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav-group">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="#services">親族内承継支援</a></li>
+            <li><a href="#services">親族外承継支援</a></li>
+            <li><a href="#services">M&A仲介・アドバイザリー</a></li>
+            <li><a href="#services">相続・贈与対策</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#team">専門家紹介</a></li>
+            <li><a href="#cases">支援実績・事例</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>アクセス</h4>
+          <address>
+            〒100-0005<br />
+            東京都千代田区丸の内 X-X-X<br />
+            丸の内ビジネスビル 15F<br /><br />
+            <a href="tel:0120XXXXXX">TEL: 0120-XXX-XXX</a><br />
+            <a href="mailto:info@jigyoshoukei.co.jp">info@jigyoshoukei.co.jp</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 事業承継コンサルティング株式会社 All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">特定商取引法に基づく表記</a>
+          <a href="#">サイトマップ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" class="scroll-top" aria-label="ページ上部へ">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
