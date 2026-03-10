@@ -83,20 +83,26 @@
 }
 .blog-series-inner {
   display: flex; align-items: center; gap: 8px;
-  padding: 12px 24px;
-  flex-wrap: wrap;
+  padding: 10px 24px;
   max-width: 1200px;
   margin: 0 auto;
+  /* PCでは横並び・折り返しなし */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.blog-series-inner::-webkit-scrollbar { display: none; }
 .series-filter-btn {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   font-size: 13px; font-weight: 700;
   color: var(--text-mid);
   border-radius: var(--radius-full);
   border: 1.5px solid transparent;
   transition: all var(--transition);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .series-filter-btn .material-symbols-outlined { font-size: 18px; }
 .series-filter-btn:hover { color: var(--primary); background: var(--bg-light); }
@@ -107,11 +113,12 @@
 }
 .blog-search-wrap {
   margin-left: auto;
+  flex-shrink: 0;
   display: flex; align-items: center; gap: 8px;
   background: var(--bg-light);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-full);
-  padding: 8px 16px;
+  padding: 8px 14px;
   transition: border-color var(--transition);
 }
 .blog-search-wrap:focus-within { border-color: var(--accent); }
@@ -119,13 +126,16 @@
 #blogSearch {
   border: none; background: none; outline: none;
   font-size: 13px; color: var(--text);
-  width: 180px;
+  width: 140px;
 }
 @media (max-width: 768px) {
-  .blog-series-inner { gap: 6px; }
-  .series-filter-btn { padding: 7px 12px; font-size: 12px; }
-  .blog-search-wrap { margin-left: 0; width: 100%; }
-  #blogSearch { width: 100%; }
+  .blog-series-bar { top: 60px; }
+  .blog-series-inner { padding: 8px 16px; gap: 6px; }
+  .series-filter-btn { padding: 7px 11px; font-size: 12px; }
+  .blog-search-wrap { width: auto; min-width: 0; }
+  #blogSearch { width: 90px; }
+  /* 長いラベルは省略 */
+  .series-filter-btn[data-filter="series1"] span:last-child { content: "前編"; }
 }
 
 /* ============================================================
@@ -141,8 +151,17 @@
 }
 .blog-main { min-width: 0; }
 @media (max-width: 1024px) {
-  .blog-layout { grid-template-columns: 1fr; }
-  .blog-sidebar { order: -1; }
+  .blog-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+  .blog-sidebar {
+    order: -1;
+    position: static !important; /* sticky解除 */
+    top: auto !important;
+  }
 }
 
 /* ============================================================
@@ -287,9 +306,9 @@
 .article-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.article-card.open .article-body { max-height: 1000px; }
+.article-card.open .article-body { max-height: 2400px; }
 .article-body-inner {
   padding: 0 24px 28px;
   border-top: 1px solid var(--border);
@@ -555,4 +574,104 @@
 }
 @media (max-width: 768px) {
   .blog-preview-series { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   MOBILE / iOS Safari 総合修正
+   ============================================================ */
+
+/* ---- ヒーロー ---- */
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 110px 0 56px;
+  }
+  .blog-hero-content h1 {
+    font-size: 26px;
+    margin: 12px 0 16px;
+  }
+  .blog-hero-content p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .breadcrumb { margin-bottom: 16px; }
+}
+
+/* ---- サイドバー（モバイルでは横スクロールのカード列） ---- */
+@media (max-width: 1024px) {
+  .blog-sidebar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  /* 相談CTAは全幅 */
+  .sidebar-cta { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .blog-sidebar { grid-template-columns: 1fr; }
+}
+
+/* ---- シリーズヘッダー ---- */
+@media (max-width: 480px) {
+  .series-header { padding: 16px; border-radius: var(--radius); }
+  .series-header h2 { font-size: 16px; }
+  .series-badge { width: 48px; height: 48px; min-width: 48px; font-size: 13px; }
+}
+
+/* ---- 記事カード ---- */
+@media (max-width: 600px) {
+  .article-header { padding: 14px 16px; gap: 10px; }
+  .article-meta-left { gap: 10px; }
+  .article-no { min-width: 50px; height: 28px; font-size: 11px; }
+  .article-title-wrap h3 { font-size: 14px; margin-bottom: 6px; }
+  .article-tags { gap: 4px; }
+  .tag { font-size: 10px; padding: 2px 8px; }
+  .toggle-icon { font-size: 20px; }
+
+  .article-body-inner { padding: 0 16px 20px; }
+  .article-body-inner p { font-size: 14px; line-height: 1.8; }
+
+  .article-point { padding: 12px 12px; font-size: 12px; gap: 8px; }
+  .article-point .material-symbols-outlined { font-size: 18px; }
+
+  .article-compare { flex-direction: column; gap: 8px; }
+  .compare-item { min-width: 0; width: 100%; }
+  .compare-arrow { transform: rotate(90deg); }
+
+  .article-checklist { padding: 14px; font-size: 13px; }
+  .article-final-message { padding: 16px; gap: 12px; flex-direction: column; }
+  .article-final-message > .material-symbols-outlined { font-size: 32px; }
+  .article-final-message h4 { font-size: 14px; }
+  .article-final-message p { font-size: 13px; }
+}
+
+/* ---- iOS Safari 向け全体調整 ---- */
+@supports (-webkit-touch-callout: none) {
+  /* iOSのスクロール慣性 */
+  .blog-layout { -webkit-overflow-scrolling: touch; }
+
+  /* iOS Safariで position:sticky が親の overflow:hidden に阻まれる問題を防ぐ */
+  .blog-series-bar { -webkit-position: sticky; }
+
+  /* iOS Safariでのフォームズーム防止（フォントサイズ16px未満だと自動ズーム） */
+  #blogSearch { font-size: 16px; }
+
+  /* タップ時のハイライト除去 */
+  .article-header,
+  .series-filter-btn,
+  .tag-cloud-btn,
+  .slider-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ---- 極小画面（iPhone SE等 375px以下）---- */
+@media (max-width: 375px) {
+  .blog-hero { padding: 96px 0 48px; }
+  .blog-hero-content h1 { font-size: 22px; }
+  .blog-series-bar { top: 56px; }
+  .blog-series-inner { padding: 6px 12px; }
+  .series-filter-btn { padding: 6px 9px; font-size: 11px; }
+  #blogSearch { width: 70px; font-size: 14px; }
+  .series-header h2 { font-size: 15px; }
+  .article-title-wrap h3 { font-size: 13px; }
 }
